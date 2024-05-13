@@ -16,6 +16,7 @@ public class CreatureController {
         this.repository = creatureRepository;
     }
 
+    //TODO jsonbackreference for recursion
     @GetMapping()
     List<Creature> getAllCreatures() {
         return repository.findAll();
